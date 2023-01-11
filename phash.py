@@ -1,7 +1,7 @@
 '''
 Author: zyy
 Date: 2022-12-04 22:42:15
-LastEditTime: 2022-12-15 17:26:19
+LastEditTime: 2023-01-03 17:39:55
 Description: 
 '''
 import imagehash
@@ -36,3 +36,13 @@ hash2 = int(str(hash2),16)
 dis = hamming_distance(hash1, hash2)
 print(dis)
 print(ihash.similarity(hash1,hash2))# 相似性
+
+print("res")
+hash1 = 0x11da2147580056b068095bf0b0a41c52
+hash2 = 0x3a215792ec2da88a200baab9c6f895cb
+hash1 = int(str(hash1),16)
+hash2 = int(str(hash2),16)
+print(hash1)
+dis = hamming_distance(hash1, hash2)
+print(dis)
+print(ihash.similarity(hash2,hash1))# 相似性
